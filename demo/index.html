@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="dashboard">
+    <header class="dashboard-header">
+      <h1>Canvas Graphs Dashboard</h1>
+      <button id="random">Random data</button>
+    </header>
+
+    <section class="charts">
+      <div class="chart-card">
+        <h2>Bar Chart</h2>
+        <canvas id="canvas-bars"></canvas>
+      </div>
+
+      <div class="chart-card">
+        <h2>Pie Chart</h2>
+        <canvas id="canvas-pie"></canvas>
+      </div>
+    </section>
+
+    <section class="data-editor">
+      <div class="editor-card">
+        <h3>Bar chart data</h3>
+        <textarea id="bar-json">
+[
+    { "label": "Pasta", "value": 380 },
+    { "label": "Pizza", "value": 50 },
+    { "label": "Camarones", "value": 80 },
+    { "label": "Milanesa", "value": 40 },
+    { "label": "Papas Fritas", "value": 240 },
+    { "label": "Tortilla", "value": 60 },
+    { "label": "Mariscos", "value": 90 }
+]            
+        </textarea>
+        <button id="apply-bar-data">Aplicar</button>
+      </div>
+
+      <div class="editor-card">
+        <h3>Pie chart data</h3>
+        <textarea id="pie-json">
+[
+    { "label": "Autos", "value": 180 },
+    { "label": "Camiones", "value": 35 },
+    { "label": "Motos", "value": 80 },
+    { "label": "Aviones", "value": 8 }
+]            
+        </textarea>
+        <button id="apply-pie-data">Aplicar</button>
+      </div>
+    </section>
+  </div>
+
+    <script type="module" src="/dist/demo/index.js"></script>
+</body>
+</html>
