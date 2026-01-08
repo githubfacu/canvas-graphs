@@ -29,7 +29,13 @@ const pieColors = [
     "#FF9F40",
     "#C9CBCF"
 ];
-const pieChart = new PieChart(canvasPie, data, {
+const pieData = [
+    { label: "Autos", value: 180 },
+    { label: "Camiones", value: 35 },
+    { label: "Motos", value: 80 },
+    { label: "Aviones", value: 8 }
+];
+const pieChart = new PieChart(canvasPie, pieData, {
     width: 500,
     height: 300,
     showLabels: true,
