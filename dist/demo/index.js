@@ -30,10 +30,10 @@ const pieColors = [
     "#C9CBCF"
 ];
 const pieData = [
-    { label: "Autos", value: 180 },
-    { label: "Camiones", value: 35 },
+    { label: "Autos", value: 60 },
+    { label: "Camiones", value: 51 },
     { label: "Motos", value: 80 },
-    { label: "Aviones", value: 8 }
+    { label: "Aviones", value: 9 }
 ];
 const pieChart = new PieChart(canvasPie, pieData, {
     width: 500,
@@ -51,7 +51,6 @@ document.getElementById("random").addEventListener("click", () => {
         value: Math.floor(Math.random() * 300)
     }));
     chart.updateData(newData);
-    pieChart.updateData(newData);
 });
 function readDataFromJSON(textareaId) {
     const textarea = document.getElementById(textareaId);

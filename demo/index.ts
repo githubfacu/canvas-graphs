@@ -35,10 +35,10 @@ const pieColors = [
 ];
 
 const pieData = [
-  { label: "Autos", value: 180 },
-  { label: "Camiones", value: 35 },
+  { label: "Autos", value: 60 },
+  { label: "Camiones", value: 51 },
   { label: "Motos", value: 80 },
-  { label: "Aviones", value: 8 }
+  { label: "Aviones", value: 9 }
 ];
 
 const pieChart = new PieChart(canvasPie, pieData, {
@@ -60,7 +60,6 @@ document.getElementById("random")!.addEventListener("click", () => {
   }));
 
   chart.updateData(newData);
-  pieChart.updateData(newData);
 });
 
 function readDataFromJSON(textareaId: string): { label: string; value: number }[] {
